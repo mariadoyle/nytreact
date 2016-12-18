@@ -51,7 +51,6 @@ Router.post("/api/saved", function (req, res)
 
 Router.get("/api/saved", function (req, res) 
 {
-	console.log("Got to backend route");
 	Articles.find({})
 	.exec(function (err, docs) 
 	{

@@ -7,25 +7,8 @@ var express    = require("express"),
 var app  = express();
 var PORT = process.env.PORT || 3000;
 
-//mongoose.connect("mongodb://heroku_35704kmg:6upv7u5k9f8k7b86ra6va0larl@ds139278.mlab.com:39278/heroku_35704kmg");
-//var db = mongoose.connection;
-
-//var databaseUri = 'mongodb://localhost/nytreact';
 var db = mongoose.connection;
-//mongoose.connect('mongodb://heroku_ztgbnsrf:IIymBs8MX0zviriQSo_uiknMmmtZgIGI@ds139288.mlab.com:39288/heroku_ztgbnsrf');
-
-
-//if (process.env.MONGODB_URI)
-//{
-//  mongoose.connect(process.env.MONGODB_URI);
-//}
-//else
-//{
-//  mongoose.connect(databaseUri);
-//}
-//
-//var db = mongoose.connection;
-
+mongoose.connect('mongodb://heroku_2r6l70kr:wWBG0YnYU_YZ1-6Emtq0My2v2tINdkMW@ds139428.mlab.com:39428/heroku_2r6l70kr');
 
 db.on("error", function(err) {
   console.log("Mongoose Error: ", err);
